@@ -5,7 +5,7 @@ let aws4 = require('aws4');
 let got = require('got');
 
 const region = process.env.region;
-const host = process.env.host || 'search-fieldservices-krh6etkcukqf2ojq2o5l7zanfe.us-east-1.es.amazonaws.com';
+const host = process.env.host || '%ES_DOMAIN%';
 const awsConfig = new AWS.Config({region});
 
 function request(options) {
